@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coin Switch</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        AOS.init();
+      });
+    </script>
+    
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div style="display: contents; justify-content: space-between">
+        <div class="logo">
+          <img
+            src="https://coinswitch.co/_next/static/media/logo.01525825.svg"
+            alt="Coin switch"
+          />
+        </div>
+        <img
+          class="hamburger"
+          src="https://img.icons8.com/?size=100&id=36389&format=png&color=000000"
+          alt="Menu"
+        />
+        <div class="nav-links">
+          <div class="nav-items">
+            <a href="#">Products</a>
+            <img
+              style="
+                width: 15px;
+                height: 15px;
+                margin-top: 5px;
+                margin-left: 5px;
+              "
+              src="https://img.icons8.com/?size=100&id=99991&format=png&color=000000"
+              alt=""
+            />
+          </div>
+          <div class="nav-items">
+            <a href="#">Coins</a>
+          </div>
+          <div>
+            <a href="#">Ventures</a>
+          </div>
+          <div>
+            <a href="#">Blog</a>
+          </div>
+          <div>
+            <a href="#">Company</a>
+            <img
+              style="width: 15px; height: 15px; margin-top: 5px"
+              src="https://img.icons8.com/?size=100&id=99991&format=png&color=000000"
+              alt=""
+            />
+          </div>
+          <button class="signup">Login To Pro</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Section -->
+    <div class="container">
+      <div data-aos="fade-up" class="grid-container animate__animated animate__bounce">
+        <div>
+          <img
+            src="https://s3.ap-southeast-1.amazonaws.com/files.coinswitch.co/images/blockchain.webp"
+            alt="img"
+          />
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            flex-direction: column;
+          "
+          class="mainContent"
+        >
+          <p style="color: rgb(73 75 87); font-weight: 800">
+            We believe that Web3 and blockchain are the foundations of the new
+            digital, decentralized economy.
+          </p>
+          <p style="color: rgb(73 75 87); font-weight: 700">
+            To this end, we&apos;re partnering with startups that are advancing
+            the future of Blockchain technology. We provide early stage founders
+            with the capital, network connections and most importantly, the
+            advice they need to transform the Web3 landscape in India.
+          </p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="animate__animated animate__bounce">
+          <p style="font-size: 28px; font-weight: 700; color: rgb(73 75 87)">
+            Why it Matters?
+          </p>
+        </div>
+
+        <div class="gridItems animate__animated animate__bounce">
+          <div class="itemsgrid">
+            <img
+              src="https://s3.ap-southeast-1.amazonaws.com/files.coinswitch.co/images/partnership.svg"
+              alt="img1"
+            />
+            <p style="font-weight: 700; color: rgb(73 75 87); margin-top: 20px">
+              Partnership with India&apos;s largest wealth tech destination
+            </p>
+          </div>
+          <div class="itemsgrid">
+            <img
+              src="https://s3.ap-southeast-1.amazonaws.com/files.coinswitch.co/images/network.svg"
+              alt="img2"
+            />
+            <p style="font-weight: 700; color: rgb(73 75 87); margin-top: 20px">
+              Access to a network of 70+ global venture capital partners
+            </p>
+          </div>
+          <div class="itemsgrid">
+            <img
+              src="https://s3.ap-southeast-1.amazonaws.com/files.coinswitch.co/images/capital.svg"
+              alt="img3"
+            />
+            <p style="font-weight: 700; color: rgb(73 75 87); margin-top: 20px">
+              Capital infusion up to $250,000
+            </p>
+          </div>
+          <div class="itemsgrid">
+            <img
+              src="https://s3.ap-southeast-1.amazonaws.com/files.coinswitch.co/images/mentorship.svg"
+              alt="img4"
+            />
+            <p style="font-weight: 700; color: rgb(73 75 87); margin-top: 20px">
+              Mentorship from in-house experts
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>
